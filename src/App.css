@@ -1,0 +1,918 @@
+/* ===== UNIVERSAL STYLE ===== */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Inter',sans-serif;
+  background-color:#f9fafb;
+  color:#1f2937;
+  line-height:1.6;
+  font-size:14px;
+  overflow-x:hidden;
+}
+
+#root{
+  width:100%;
+  min-height:100vh;
+}
+
+
+/* ===== SCROLLBAR ===== */
+
+::-webkit-scrollbar{
+  width:5px;
+}
+
+::-webkit-scrollbar-track{
+  background:#f3f4f6;
+}
+
+::-webkit-scrollbar-thumb{
+  background:#2563eb;
+  border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background:#1e40af;
+}
+
+/* ===== LOGIN + SIGNUP ===== */
+
+.loginPage,
+.signUp {
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+  padding:16px;
+  animation:fadeIn .5s ease-out;
+}
+
+.loginPage > div:first-child{
+  position:absolute;
+  top:90px;
+  text-align: center;
+  font-size:24px;
+  font-weight:700;
+  color:black;
+}
+
+.signUp > div:first-child{
+  position:absolute;
+  top:15px;
+  text-align: center;
+  font-size:24px;
+  font-weight:700;
+  color:black;
+}
+
+
+.loginPage > div:first-child h2,
+.signUp > div:first-child h2{
+
+color:white;
+
+font-size:28px;
+
+font-weight:700;
+
+}
+
+
+/* Form Box */
+
+.loginPageForm,
+.signUpForm{
+
+background:white;
+
+margin-top: 40px;
+
+border-radius:16px;
+
+padding:32px;
+
+width:100%;
+
+max-width:420px;
+
+box-shadow:0 20px 25px -5px rgba(0,0,0,.1);
+
+animation:slideUp .5s ease-out;
+
+}
+
+
+/* Form layout */
+
+.loginPageForm form,
+.signUpForm form{
+
+display:flex;
+
+flex-direction:column;
+
+gap:24px;
+
+}
+
+
+/* Input width */
+
+.loginPageForm .MuiTextField-root,
+.signUpForm .MuiTextField-root{
+
+width:100%;
+
+}
+
+
+/* Button */
+
+.loginPageForm .loginButton,
+.signUpForm .signButton{
+
+background:#2563eb !important;
+
+color:white !important;
+
+padding:12px !important;
+
+border-radius:8px !important;
+
+font-weight:600 !important;
+
+transition:.3s;
+
+}
+
+
+.loginPageForm .loginButton:hover,
+.signUpForm .signButton:hover{
+
+background:#1e40af !important;
+
+transform:translateY(-2px);
+
+}
+
+
+/* Login Signup text */
+
+.loginPageForm p,
+.signNavigate p{
+
+text-align:center;
+
+color:#6b7280;
+
+font-size:14px;
+
+margin-top:20px;
+
+}
+
+/* Error */
+
+.signErrorMsg{
+
+background:#fee2e2;
+
+color:#991b1b;
+
+padding:12px;
+
+border-radius:8px;
+
+margin-top:15px;
+
+border-left:4px solid #dc2626;
+
+}
+
+
+/* ===== JOB APPLY FORM ===== */
+
+.jobApplyForm{
+  padding:30px;
+  max-width:650px;
+  margin:auto;
+}
+
+.jobApplyForm > div{
+  background:white;
+  padding:30px;
+  border-radius:15px;
+  box-shadow:0px 4px 15px rgba(0,0,0,0.1);
+}
+
+.jobApplyForm form{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.jobApplyForm .MuiTextField-root{
+  width:100%;
+}
+
+.jobApplyForm .MuiSelect-root{
+  width:100%;
+}
+
+.jobApplyForm p{
+  color:red;
+  font-size:13px;
+  margin-top:5px;
+}
+
+.jobApplyForm input[type="file"]{
+  width:100%;
+  padding:12px;
+  border:2px dashed #d1d5db;
+  border-radius:8px;
+  background:#f3f4f6;
+  cursor:pointer;
+}
+
+.jobApplyForm input[type="file"]:hover{
+  border-color:#2563eb;
+  background:#dbeafe;
+}
+
+.jobApplyForm .MuiButton-root{
+  width:100%;
+  margin-top:10px;
+  padding:12px;
+}
+
+.jobApplyForm .MuiButton-contained{
+  background:#2563eb !important;
+}
+
+.jobApplyForm .MuiButton-contained:hover{
+  background:#1e40af !important;
+}
+
+.jobApplyForm label{
+  font-weight:600;
+  color:#374151;
+}
+
+
+/* ===== EDIT PROFILE FORM ===== */
+
+.profileForm{
+  margin: auto;
+  max-width: 650px;
+  padding: 30px;
+}
+
+.profileForm > div{
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow:0px 4px 15px rgba(0,0,0,0.1);
+}
+
+.profileForm form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profileForm button{
+  background-color:#2563eb  ;
+}
+
+.profileForm button:hover{
+  background-color: #1e40af;
+}
+
+/* ===== ANIMATION ===== */
+
+@keyframes fadeIn{
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0px);
+  }
+}
+
+@keyframes slideUp{
+  from{
+    opacity:0;
+    transform:translateY(40px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0px);
+  }
+}
+
+.fade-in{
+  animation:fadeIn .5s ease;
+}
+
+.slide-up{
+  animation:slideUp .5s ease;
+}
+
+
+/* ===== DASHBOARD ===== */
+
+.dashboard{
+
+padding:32px;
+
+max-width:1400px;
+
+margin:auto;
+
+animation:fadeIn .5s ease-out;
+
+}
+
+
+.dashUserName{
+
+margin-bottom:48px;
+
+padding-bottom:32px;
+
+border-bottom:2px solid #f3f4f6;
+
+}
+
+/* .dashUserName h3{
+
+font-size:32px;
+
+font-weight:700;
+
+background:linear-gradient(
+135deg,
+#2563eb,
+#7c3aed
+);
+
+color: black;
+
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+} */
+
+.dashUserName h3{
+  font-size: 32px;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+
+.dashJobCount,
+.dashRecentJob > h5:first-of-type{
+
+font-size:16px;
+
+color:#6b7280;
+
+margin-bottom:16px;
+
+font-weight:600;
+
+
+}
+
+
+.dashRecentJob{
+
+background:white;
+
+padding:32px;
+
+border-radius:12px;
+
+margin-bottom:32px;
+
+box-shadow:0 4px 6px rgba(0,0,0,.1);
+
+}
+
+
+.dashRecentJob h5{
+
+margin-bottom:24px;
+
+font-size:18px;
+
+color:#2563eb;
+
+font-weight:600;
+
+}
+
+
+.dashRecentJob ul{
+
+background:#f9fafb;
+
+padding:24px;
+
+border-radius:8px;
+
+margin-bottom:16px;
+
+border-left:4px solid #2563eb;
+
+transition:.3s;
+
+list-style:none;
+
+}
+
+
+.dashRecentJob ul:hover{
+
+box-shadow:0 4px 6px rgba(0,0,0,.1);
+
+transform:translateX(4px);
+
+}
+
+
+.dashRecentJob li{
+
+margin-bottom:8px;
+
+font-weight:500;
+
+color:#1f2937;
+
+}
+
+
+.dashNavigate{
+
+display:flex;
+
+gap:24px;
+
+margin-top:48px;
+
+padding:24px;
+
+background:white;
+
+border-radius:12px;
+
+box-shadow:0 4px 6px rgba(0,0,0,.1);
+
+}
+
+
+.dashNavigate a{
+
+text-decoration:none;
+
+background:#2563eb;
+
+color:white;
+
+padding:12px 24px;
+
+border-radius:8px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+
+.dashNavigate a:hover{
+
+background:#1e40af;
+
+transform:translateY(-2px);
+
+}
+
+
+
+/* ===== PROFILE ===== */
+
+.profilePage{
+
+padding:32px;
+
+max-width:1200px;
+
+margin:auto;
+
+display:grid;
+
+grid-template-columns:1fr 1fr 1fr;
+
+gap:32px;
+
+}
+
+
+.userInfoCard,
+.profilePage > div{
+
+background:white;
+
+padding:32px;
+
+border-radius:12px;
+
+box-shadow:
+0 4px 6px rgba(0,0,0,.1);
+
+transition:.3s;
+
+}
+
+
+.userInfoCard:hover,
+.profilePage > div:hover{
+
+transform:translateY(-4px);
+
+box-shadow:
+0 20px 25px rgba(0,0,0,.1);
+
+}
+
+
+.userInfoCard h4,
+.profilePage h4{
+
+font-size:18px;
+
+font-weight:700;
+
+margin-bottom:24px;
+
+color:#2563eb;
+
+}
+
+
+.userInfoCard p,
+.profilePage p{
+
+margin-bottom:16px;
+
+font-size:14px;
+
+font-weight:500;
+
+color:#1f2937;
+
+}
+
+
+.profilePage ul{
+
+list-style:none;
+
+padding:16px;
+
+background:#f9fafb;
+
+border-radius:8px;
+
+margin-bottom:16px;
+
+border-left:4px solid #f59e0b;
+
+}
+
+
+.profilePage li{
+
+margin-bottom:8px;
+
+font-size:13px;
+
+color:#1f2937;
+
+}
+
+
+.editProfile{
+
+display:flex;
+
+align-items:center;
+
+gap:16px;
+
+padding-top:24px;
+
+border-top:1px solid #e5e7eb;
+
+}
+
+.jobList{
+  padding:32px;
+  max-width:1400px;
+  margin:auto;
+}
+
+.jobList h3{
+  font-size:28px;
+  color:#2563eb;
+  margin-bottom:25px;
+}
+
+.jobListSearch{
+  width:100%;
+  max-width:500px;
+  margin-bottom:25px;
+}
+
+.jobListSearch .MuiTextField-root{
+  width:100%;
+}
+
+.jobListFilters{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  margin-bottom:30px;
+  box-shadow:0px 2px 10px rgba(0,0,0,0.1);
+}
+
+.jobListRender{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
+  gap:25px;
+}
+
+.jobListRender ul{
+  list-style:none;
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0px 4px 15px rgba(0,0,0,0.1);
+  transition:0.3s;
+  /* border-top:4px solid #2563eb; */
+}
+
+.jobListRender ul:hover{
+  transform:translateY(-5px);
+}
+
+.jobListRender li{
+  margin-bottom:10px;
+  font-size:14px;
+}
+
+.jobListRender li:nth-child(1){
+  color:#2563eb;
+  font-size:18px;
+  font-weight:bold;
+}
+
+.jobListRender li:nth-child(2){
+  color:#7c3aed;
+  font-weight:bold;
+}
+
+.jobListRender button{
+  /* width:100%; */ 
+  margin-right: 20px;
+  margin-top:10px;
+}
+
+
+/* ===== JOB DETAILS ===== */
+
+.jobDetails{
+  max-width:900px;
+  margin:auto;
+  padding:30px;
+}
+
+.jobDetails div{
+  background:white;
+  padding:30px;
+  border-radius:15px;
+  box-shadow:0px 4px 15px rgba(0,0,0,0.1);
+  border-bottom : 5px solid rgb(118, 118, 210);
+}
+
+.jobDetails p{
+  margin-bottom:15px;
+  line-height:1.7;
+}
+
+.jobDetails .title{
+  color:#2563eb;
+  font-size:20px;
+  font-weight:bold;
+}
+
+.jobDetails .company{
+  color:#7c3aed;
+  font-weight:bold;
+}
+
+.jobDetails button{
+  margin-right:10px;
+  margin-top:15px;
+}
+
+/* ===== SAVED JOBS ===== */
+
+.savedJobs{
+  padding:20px;
+}
+
+.savedJobs ul{
+  list-style:none;
+  background:white;
+  padding:20px;
+  margin-bottom:30px;
+  border-radius:10px;
+  box-shadow:0px 2px 10px rgba(0,0,0,.1);
+  border-left:4px solid #10b981;
+  transition:0.3s;
+}
+
+.savedJobs ul:hover{
+  transform:translateY(-5px);
+}
+
+.savedJobs li{
+  margin-bottom:10px;
+}
+
+.savedJobs .title{
+  color:#2563eb;
+  font-weight:bold;
+}
+
+.savedJobs .company{
+  color:#7c3aed;
+  font-weight:bold;
+}
+
+.savedJobs button{
+  margin-top:15px;
+  background:#ef4444 !important;
+}
+
+/* ===== ANIMATION ===== */
+
+@keyframes fadeIn{
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0px);
+  }
+}
+
+@keyframes slideUp{
+  from{
+    opacity:0;
+    transform:translateY(40px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0px);
+  }
+}
+
+.fade-in{
+  animation:fadeIn .5s ease;
+}
+
+.slide-up{
+  animation:slideUp .5s ease;
+}
+
+
+/* ===== UTILITY ===== */
+
+.flex{
+  display:flex;
+}
+
+.flex-center{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.grid{
+  display:grid;
+}
+
+.text-truncate{
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+
+
+/* ===== TOAST ===== */
+
+.react-hot-toast-container{
+  z-index:999;
+}
+
+.react-hot-toast-message{
+  background:white !important;
+  padding:15px !important;
+  border-radius:12px !important;
+  border-left:4px solid #10b981 !important;
+  box-shadow:0px 4px 15px rgba(0,0,0,0.1) !important;
+}
+
+.react-hot-toast-message.error{
+  border-left:4px solid #ef4444 !important;
+}
+
+.react-hot-toast-message.loading{
+  border-left:4px solid #2563eb !important;
+}
+
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:768px){
+
+.dashboard,
+.jobList,
+.savedJobs,
+.profilePage,
+.profileForm,
+.jobApplyForm{
+    padding:15px;
+}
+
+.jobListRender{
+    grid-template-columns:1fr;
+}
+
+.savedJobs > div{
+    grid-template-columns:1fr;
+}
+
+.profilePage{
+    grid-template-columns:1fr;
+}
+
+.dashNavigate{
+    flex-direction:column;
+}
+
+.dashNavigate a{
+    width:100%;
+    text-align:center;
+}
+
+}
+
+@media(max-width:480px){
+
+body{
+    font-size:13px;
+}
+
+.loginPageForm,
+.signUpForm{
+    padding:15px;
+}
+
+.jobList h3,
+.dashUserName h3{
+    font-size:20px;
+}
+
+}
